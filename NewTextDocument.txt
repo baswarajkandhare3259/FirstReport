@@ -1,0 +1,182 @@
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 /
+$ pwd
+/
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 /
+$ pwd
+/
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 /
+$ mkdir git_demo
+mkdir: cannot create directory ‘git_demo’: Permission denied
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 /
+$ cd git_demo
+bash: cd: git_demo: No such file or directory
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 /
+$ pwd
+/
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 /
+$ mkdir git_demo
+mkdir: cannot create directory ‘git_demo’: Permission denied
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 /
+$ cd /c/Users/Baswaraj
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~
+$ mkdir git_demo
+mkdir: cannot create directory ‘git_demo’: File exists
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~
+$ mkdir git_demo
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~
+$ pwd
+/c/Users/Baswaraj
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~
+$ mkdir FirstReport
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~
+$ pwd
+/c/Users/Baswaraj
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~
+$ cd git_demo
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo
+$ mkdir FirstReport
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo
+$ cd FirstReport
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport
+$ git init
+Initialized empty Git repository in C:/Users/Baswaraj/git_demo/FirstReport/.git/
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ touch alpha.txt
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ notepad alpha.txt
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        alpha.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git add .
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   alpha.txt
+
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git commit -m "beta gamma"
+[master (root-commit) d323a02] beta gamma
+ 1 file changed, 1 insertion(+)
+ create mode 100644 alpha.txt
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git log
+commit d323a020ca0e81127fedc280095043c253bbb90b (HEAD -> master)
+Author: Baswaraj github <kandharebasav789@gmail.com>
+Date:   Fri Aug 26 00:34:34 2022 +0530
+
+    beta gamma
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ touch beta.txt
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ notepad beta.txt
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ notepad alpha.txt
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   alpha.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        beta.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git add .
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git commit -m "alpha gamma"
+[master 4679d05] alpha gamma
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 beta.txt
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ https://github.com/baswarajkandhare3259/FirstReport.git
+bash: https://github.com/baswarajkandhare3259/FirstReport.git: No such file or directory
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git puch -u origin master
+git: 'puch' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git remote add origin https://github.com/baswarajkandhare3259/FirstReport.git
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git remote add -v
+error: unknown switch `v'
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git remote -v
+origin  https://github.com/baswarajkandhare3259/FirstReport.git (fetch)
+origin  https://github.com/baswarajkandhare3259/FirstReport.git (push)
+
+Baswaraj@LAPTOP-78451IQJ MINGW64 ~/git_demo/FirstReport (master)
+$ git push -u origin main
+
